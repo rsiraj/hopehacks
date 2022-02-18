@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styless.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <title>Test</title>
     
 </head>
 <body>
-    <div class="container">
+    <div id="calorieCalculator" class="container">
         <fieldset>
             <form action="/" method="post">
-                <input name="calories" type="text" class="ghost-input" placeholder="Enter a city" required>
-                <input type="submit" class="ghost-button" value="Get Weather">
+                <label for="diet">Choose a diet:</label>
+                <select name="diet" id="diet">
+                    <option value=" ">No specific diet</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="vegetarian">Vegetarian</option>
+                </select>
+                <input name="dailyCals" type="text" class="ghost-input" placeholder="Enter target daily calories" required>
+                <input type="submit" class="ghost-button" value="Get your meal plan for the day">
             </form>
-
+            
         </fieldset>
+    </div>
+    <div id="activityMap" class="container">
+        <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=hiking%20near%20me&key=AIzaSyBE0R8ugKVlOaOFp0q-59d6_PfQFJgfv7I"></iframe>
     </div>
 </body>
 </html>
