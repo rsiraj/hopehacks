@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/styless.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-    <script src="/test.js"></script>
-    <title>Test</title>
-    
+    <!-- <script src="https://kit.fontawesome.com/beff56db6b.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/8f6e3efd56.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/public/css/style.css">
+
+    <title>FITHUB | Home</title>
 </head>
+
 <body>
-    <div id="mealPlanner" class="container">
-        <fieldset>
-            <form action="/" method="post">
-                <label for="diet">Choose a diet:</label>
-                <select name="diet" id="diet">
-                    <option value=" ">No specific diet</option>
-                    <option value="vegan">Vegan</option>
-                    <option value="vegetarian">Vegetarian</option>
-                </select>
-                <input name="dailyCals" type="text" class="ghost-input" placeholder="Enter target daily calories" required>
-                <input type="submit" class="ghost-button" value="Get your meal plan for the day">
-            </form>
-            <% if(mealText !== null){ %>
-                <p><%= mealText[0] %></p>
-                <a target="_blank" href="<%= mealUrls[0] %>"><img src="<%= mealImages[0] %>"></img></a>
-                <p><%= mealText[1] %></p>
-                <a target="_blank" href="<%= mealUrls[1] %>"><img src="<%= mealImages[1] %>"></img></a>
-                <p><%= mealText[2] %></p>
-                <a target="_blank" href="<%= mealUrls[2] %>"><img src="<%= mealImages[2] %>"></img></a>
-                <p><%= nutrition %></p>
-            <% } %>
-            <% if(error !== null){ %>
-                <p><%= error %></p>
-            <% } %>
-        </fieldset>
-    </div>
+    <!-- header section -->
+    <nav>
+        <div class="logo">FitHub</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Features</a>
+                <ul>
+                    <li><a href="/meals">Meal Planner</a></li>
+                    <li><a href="/hiking">Get Active</a></li>
+                    <li><a href="#">Bmi</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Diet</a>
+                <ul>
+                    <li><a href="#">Breakfast</a></li>
+                    <li><a href="#">Lunch</a></li>
+                    <li><a href="#">Dinner</a></li>
+                    <li><a href="#">More</a>
+                        <ul>
+                            <li><a href="#">Snacks</a>
+                            <li><a href="#">Drinks</a>
+                            <li><a href="#">Fruits</a>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1>content</h1>
+    </section>
+    <!-- Footer Section -->
+	<footer>
+		<div id="logoFooter">
+			<p class="logo">FITHUB</p>
+		</div>
+		<p>Copyright&copy; 2022 | FitHub </p>
+		<div class="media">
+			<a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>&nbsp; |
+			<a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a> |
+			<a href="https://www.Youtube.com"><i class="fab fa-youtube"></i></a> |
+            <a href="https://www.snapchat.com"><i class="fab fa-snapchat"></i></a> 
+		</div>
+	</footer>
+
 </body>
-<script src="/calorieCalculator.js"></script>
+
 </html>
