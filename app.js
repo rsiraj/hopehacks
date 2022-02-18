@@ -5,6 +5,7 @@ require('dotenv').config()
 const bodyParser = require('body-parser')
 
 const apiKey = process.env.APIKEY
+const apiKey2 = process.env.APIKEY2
 // let dailyCals = 2300
 // let diet = 'vegetarian'
 
@@ -25,6 +26,8 @@ mealImages = ""
 mealUrls = ""
 nutrition = ""
 error = ""
+activityVariable = ""
+value = ""
 
 app.post('/', (req, res)=> {
     let dailyCals = req.body.dailyCals
@@ -68,7 +71,11 @@ app.post('/', (req, res)=> {
 
 })
 
-
+app.get('/api/:activity', (req, res)=> {
+    let userActivity = req.params.activity
+    let url = `https://www.google.com/maps/embed/v1/search?q=${userActivity}%20near%20me&key=${apiKey2}`
+    res.render('mapPage', {url})
+})
 
 // request (url, function(err, res, body){
 //     if(err){
