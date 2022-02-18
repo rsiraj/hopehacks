@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/styless.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <script src="/test.js"></script>
     <title>Test</title>
     
 </head>
@@ -22,7 +23,18 @@
                 <input name="dailyCals" type="text" class="ghost-input" placeholder="Enter target daily calories" required>
                 <input type="submit" class="ghost-button" value="Get your meal plan for the day">
             </form>
-            
+            <% if(mealText !== null){ %>
+                <p><%= mealText[0] %></p>
+                <a target="_blank" href="<%= mealUrls[0] %>"><img src="<%= mealImages[0] %>"></img></a>
+                <p><%= mealText[1] %></p>
+                <a target="_blank" href="<%= mealUrls[1] %>"><img src="<%= mealImages[1] %>"></img></a>
+                <p><%= mealText[2] %></p>
+                <a target="_blank" href="<%= mealUrls[2] %>"><img src="<%= mealImages[2] %>"></img></a>
+                <p><%= nutrition %></p>
+            <% } %>
+            <% if(error !== null){ %>
+                <p><%= error %></p>
+            <% } %>
         </fieldset>
     </div>
     <div id="activityMap" class="container">

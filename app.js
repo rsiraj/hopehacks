@@ -20,6 +20,12 @@ app.get('/', (req, res)=> {
     res.render('index')
 })
 
+mealText = ""
+mealImages = ""
+mealUrls = ""
+nutrition = ""
+error = ""
+
 app.post('/', (req, res)=> {
     let dailyCals = req.body.dailyCals
     let diet = req.body.diet
@@ -30,21 +36,30 @@ app.post('/', (req, res)=> {
         if(err){
             console.log(`Error: ${err}`)
 
-            res.render('index', {dailyCals:null, error: err})
+            res.render('index', {mealPlans:null, error: err})
         }else {
             // console.log(`Body: ${body}`)
     
             let mealPlan = JSON.parse(body)
     
             if(mealPlan.meals == undefined){
-                res.render('index', {dailyCals:null, error: "Enter a valid number of calories."})
+                res.render('index', {mealPlans:null, error: "Enter a valid number of calories."})
             } else {
-
-                let mealPlanText = `Your breakfast today is ${mealPlan.meals[0].title}. Time to prepare: ${mealPlan.meals[0].readyInMinutes} minutes. Your lunch today is ${mealPlan.meals[1].title}. Time to prepare: ${mealPlan.meals[1].readyInMinutes} minutes. Your dinner today is ${mealPlan.meals[2].title}. Time to prepare: ${mealPlan.meals[2].readyInMinutes} minutes.`
-                console.log(mealPlan)
-                console.log(mealPlanText)
-
-                res.render('index', { mealPlan: mealPlanText, error:null})
+                let breakfastText = `Your breakfast today is ${mealPlan.meals[0].title}. Time to prepare: ${mealPlan.meals[0].readyInMinutes} minutes.`
+                let lunchText = `Your lunch today is ${mealPlan.meals[1].title}. Time to prepare: ${mealPlan.meals[1].readyInMinutes} minutes.`
+                let dinnerText = `Your dinner today is ${mealPlan.meals[2].title}. Time to prepare: ${mealPlan.meals[2].readyInMinutes} minutes.`
+                let breakfastImage = `https://spoonacular.com/recipeImages/${mealPlan.meals[0].id}-312x231.jpg`
+                let lunchImage = `https://spoonacular.com/recipeImages/${mealPlan.meals[1].id}-312x231.jpg`
+                let dinnerImage = `https://spoonacular.com/recipeImages/${mealPlan.meals[2].id}-312x231.jpg`
+                let breakfastURL = mealPlan.meals[0].sourceUrl
+                let lunchURL = mealPlan.meals[1].sourceUrl
+                let dinnerURL = mealPlan.meals[2].sourceUrl
+                let mealText = [breakfastText, lunchText, dinnerText]
+                let mealImages = [breakfastImage, lunchImage, dinnerImage]
+                let mealUrls = [breakfastURL, lunchURL, dinnerURL]
+                let nutrition = `Your meals today add up to a total of ${mealPlan.nutrients.calories} calories. Your macros are Protein: ${mealPlan.nutrients.protein}g, Fat: ${mealPlan.nutrients.fat}g, Carbs: ${mealPlan.nutrients.carbohydrates}g.`
+                
+                res.render('index', { mealText, mealImages, mealUrls, nutrition,  error:null})
             }
         }
     
