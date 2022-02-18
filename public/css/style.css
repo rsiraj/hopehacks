@@ -5,8 +5,12 @@
     font-family: sans-serif;
     
 }
+html {
+    height: 100%;
+}
 body{
     background-color: white;
+    height: 100%;
 
 }
 nav{
