@@ -21,6 +21,10 @@ app.get('/meals', (req, res)=> {
     res.render('mealsPage')
 })
 
+app.get('/contact', (req, res)=> {
+    res.render('contact')
+})
+
 mealText = ""
 mealImages = ""
 mealUrls = ""
@@ -56,7 +60,7 @@ app.post('/meals', (req, res)=> {
                 dinnerText = `Your dinner today is ${mealPlan.meals[2].title}. Servings: ${mealPlan.meals[2].servings}. Time to prepare: ${mealPlan.meals[2].readyInMinutes} minutes.`
                 ]
                 let mealImages = [
-                (breakfastImage = `https://spoonacular.com/recipeImages/${mealPlan.meals[0].id}-312x231.jpg`),
+                breakfastImage = `https://spoonacular.com/recipeImages/${mealPlan.meals[0].id}-312x231.jpg`,
                 lunchImage = `https://spoonacular.com/recipeImages/${mealPlan.meals[1].id}-312x231.jpg`,
                 dinnerImage = `https://spoonacular.com/recipeImages/${mealPlan.meals[2].id}-312x231.jpg`
                 ]
