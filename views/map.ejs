@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://kit.fontawesome.com/beff56db6b.js" crossorigin="anonymous"></script> -->
-    <script src="https://kit.fontawesome.com/8f6e3efd56.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/style.css">
-
-    <title>FITHUB | Home</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <title>FITHUB | Get Fit Map</title>
+    
 </head>
-
 <body>
     <!-- header section -->
     <nav>
@@ -40,15 +37,18 @@
                 </ul>
             </li>
             <li><a href="#">About us</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <section>
-        <h1>content</h1>
-    </section>
-    <!-- Footer Section -->
-	<footer>
+    <div id="activityMap" class="container">
+        <a href=/hiking><p>Hiking </p></a> 
+        <a href=/gym><p>Gym </p></a> 
+        <a href=/soccer><p>Soccer </p></a>
+        <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="<%= url %>"></iframe>
+    </div>
+
+    <footer>
 		<div id="logoFooter">
 			<p class="logo">FITHUB</p>
 		</div>
@@ -60,7 +60,6 @@
             <a href="https://www.snapchat.com"><i class="fab fa-snapchat"></i></a> 
 		</div>
 	</footer>
-
 </body>
-
+<script src="/calorieCalculator.js"></script>
 </html>

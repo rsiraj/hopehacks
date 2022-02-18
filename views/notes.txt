@@ -1,0 +1,11 @@
+  <% setTimeout(()=>{ %>
+                <% if(mealPlans !== null){ %>
+                    <p><%= mealPlans %></p>
+                    <img src="<%= mealPlanImage %>"></img>
+                  <% } %>
+                  <% if(error !== null){ %>
+                    <p><%= error %></p>
+                  <% } %>
+            <% }, 0) %>
+
+<script src="/app.js"></script>
