@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+  }
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* linear-gradient makes text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("parkPic.jpeg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+}
+
+button{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.quotes-header{
+  text-align: center;
+  padding: 2em;
+}
+
+/* testomonies start  */
+
+.testimonials {
+  background-color: #e8e8e5;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.testimonials ul {
+  list-style: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 0;
+}
+
+.testimonials ul li {
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  width: 100vw;
+}
+
+.testimonials ul li p {
+  max-width: 600px;
+  margin: 1rem auto;
+  width: 50%;
+}
+
+.testimonials-control {
+  background-color: rgba(255,255,255,0.2);
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials-control i {
+  cursor: pointer;
+  padding: 1.3rem;
+}
+
+
