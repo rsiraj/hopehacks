@@ -4,18 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <title>FITHUB | Get Fit Map</title>
     
 </head>
 <body>
+    <!-- header section -->
+    <nav>
+        <div class="logo">FitHub</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Features</a>
+                <ul>
+                    <li><a href="/meals">Meal Planner</a></li>
+                    <li><a href="/hiking">Get Active</a></li>
+                    <li><a href="#">Bmi</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Diet</a>
+                <ul>
+                    <li><a href="#">Breakfast</a></li>
+                    <li><a href="#">Lunch</a></li>
+                    <li><a href="#">Dinner</a></li>
+                    <li><a href="#">More</a>
+                        <ul>
+                            <li><a href="#">Snacks</a>
+                            <li><a href="#">Drinks</a>
+                            <li><a href="#">Fruits</a>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
     <div id="activityMap" class="container">
         <a href=/hiking><p>Hiking </p></a> 
         <a href=/gym><p>Gym </p></a> 
         <a href=/soccer><p>Soccer </p></a>
         <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="<%= url %>"></iframe>
     </div>
+
+    <footer>
+		<div id="logoFooter">
+			<p class="logo">FITHUB</p>
+		</div>
+		<p>Copyright&copy; 2022 | FitHub </p>
+		<div class="media">
+			<a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>&nbsp; |
+			<a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a> |
+			<a href="https://www.Youtube.com"><i class="fab fa-youtube"></i></a> |
+            <a href="https://www.snapchat.com"><i class="fab fa-snapchat"></i></a> 
+		</div>
+	</footer>
 </body>
 <script src="/calorieCalculator.js"></script>
 </html>
