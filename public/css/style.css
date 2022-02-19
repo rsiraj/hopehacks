@@ -87,6 +87,10 @@ nav ul ul ul li{
 
 
  /* Footer */
+ .footeradjustment{
+    height: 100px;
+}  
+
 footer {
     bottom: 0;
     width: 100%;
