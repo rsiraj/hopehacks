@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
 </head>
 <body>
   <nav>
@@ -37,36 +38,41 @@
         <li><a href="/contact">Contact</a></li>
     </ul>
 </nav>
-    <form>
-        <label for="fname">First name:</label><br/>
-        <input
-          type="text"
-          id="fname"
-          name="fname"
-          placeholder="First Name"
-        /><br />
-        <label for="lname">Last name:</label><br />
-        <input
-          type="text"
-          id="lname"
-          name="lname"
-          placeholder="Last Name"
-        /><br />
-        <label for="date">Date:</label><br />
-        <input type="date" id="date" name="date" /><br />
-        <label for="tel">Phone Number:</label><br />
-        <input type="tel" id="tel" name="tel" placeholder="(555)111-1234" /><br />
-        <label for="comment">
-          Comment<br /><textarea
-            cols="35"
-            rows="5"
-            name="mes"
-            id="comment"
-            placeholder="Let us know how we can help you"
-          ></textarea></label
-        ><br />
-        <button>Submit</button>
-      </form>
+    <!-- <div class="container"> -->
+      <!-- <section class="hero-image">
+        <div class="hero-text"> -->
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+        <div class="contact-form">
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Name</label>
+              <span>Name</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
 
       <footer>
         <div id="logoFooter">
