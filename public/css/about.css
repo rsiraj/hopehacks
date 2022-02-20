@@ -4,19 +4,24 @@
     box-sizing: 0;
   }
 
-.aboutHeader{
+  .aboutHeader h1{
     text-align: center;
-    padding: 2em;
+    padding-top: 3%;
+    font-size: 3em;
 }
 
-/* .members{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: stretch;
-	align-content: center;
-} */
+.aboutHeader h2{
+    text-align: center;
+    padding: 2.5em;
+}
+
+
+.aboutHeader h4{
+    text-align: center;
+    padding-bottom: 2%;
+    font-size: 1em;
+}
+
 
 .team{
     display: flex;
@@ -30,5 +35,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3em;
 
 }
+
+.mission{
+    background-color: green;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+
+.about{
+    font-size: 3em;
+    text-align: center;
+    padding: 2em;
+}
+
