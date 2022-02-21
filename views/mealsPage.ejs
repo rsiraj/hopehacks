@@ -14,31 +14,11 @@
 <body>
     <!-- header section -->
     <nav>
-        <div class="logo">FitHub</div>
+        <a href="/"><div class="logo">FitHub</div></a>
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#">Features</a>
-                <ul>
-                    <li><a href="/meals">Meal Planner</a></li>
-                    <li><a href="/hiking">Get Active</a></li>
-                    <li><a href="#">Bmi</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Diet</a>
-                <ul>
-                    <li><a href="#">Breakfast</a></li>
-                    <li><a href="#">Lunch</a></li>
-                    <li><a href="#">Dinner</a></li>
-                    <li><a href="#">More</a>
-                        <ul>
-                            <li><a href="#">Snacks</a>
-                            <li><a href="#">Drinks</a>
-                            <li><a href="#">Fruits</a>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="#">About us</a></li>
+            <li><a href="/meals">Meal Planner</a></li>
+            <li><a href="/gym">Get Active</a></li>
+            <li><a href="/about">About us</a></li>
             <li><a href="/contact">Contact</a></li>
         </ul>
     </nav>
@@ -56,16 +36,16 @@
                     <option value="paleo">Paleo</option>
                 </select>
                 <input name="dailyCals" type="text" pattern="[0-9]{4}" class="ghost-input" placeholder="Calories: XXXX" required>
-                <input type="submit" class="ghost-button" value="Get your meal plan for the day">
+                <input type="submit" class="button" value="Get your meal plan for the day">
             </form>
             <% if(mealText !== null){ %>
-                <p><%= mealText[0] %></p>
+                <p class="meal"><%= mealText[0] %></p>
                 <a target="_blank" href="<%= mealUrls[0] %>"><img src="<%= mealImages[0] %>"></img></a>
-                <p><%= mealText[1] %></p>
+                <p class="meal"><%= mealText[1] %></p>
                 <a target="_blank" href="<%= mealUrls[1] %>"><img src="<%= mealImages[1] %>"></img></a>
-                <p><%= mealText[2] %></p>
+                <p class="meal"><%= mealText[2] %></p>
                 <a target="_blank" href="<%= mealUrls[2] %>"><img src="<%= mealImages[2] %>"></img></a>
-                <p><%= nutrition %></p>
+                <p class="meal"><%= nutrition %></p>
             <% } %>
             <% if(error !== null){ %>
                 <p><%= error %></p>
@@ -73,22 +53,15 @@
         </fieldset>
     </div>
 
-     <div class="footeradjustment">
-
-     </div>
+    <div class="footeradjustment"></div>
     <footer class="footerMeals">
-		<div id="logoFooter">
-			<p class="logo">FITHUB</p>
-		</div>
-        <div class="footermiddle">
-            <p>Copyright&copy; 2022 | FitHub </p>
+            <a href="/"><p class="copyright">Copyright&copy; 2022 | FitHub</p></a>
             <div class="media">
-                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>&nbsp; |
-                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a> |
-                <a href="https://www.Youtube.com"><i class="fab fa-youtube"></i></a> |
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>&nbsp; 
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a> 
+                <a href="https://www.Youtube.com"><i class="fab fa-youtube"></i></a> 
                 <a href="https://www.snapchat.com"><i class="fab fa-snapchat"></i></a> 
             </div>
-        </div>
 	</footer>
 </body>
 </html>

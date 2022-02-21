@@ -7,30 +7,16 @@ fieldset{
     border: none;
     text-align: center;
     margin-top: 30px;
-
+    display: block;
 }
 
 .media i {
     font-size: 35px;
     color: white;
-    border: 15px solid olivedrab;
-   border-radius: 50%;
-   
-    
+    border-radius: 50%;
 }
-.footermiddle{
-    margin-left: -50vw;
+.meal {
+    font-size: 18px;
+    margin: 10px;
 }
 
-
-
-
-/* .media :hover{
-  border-color: #0010f5;
-  box-shadow: 1px 2px 20px #0010f5;
-  color: #0010f5;
-  color: black;
-    border-radius: 5px;
-    box-shadow: 0 0 5px black;
-
-} */
