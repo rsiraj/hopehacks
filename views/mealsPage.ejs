@@ -39,13 +39,16 @@
                 <input type="submit" class="button" value="Get your meal plan for the day">
             </form>
             <% if(mealText !== null){ %>
-                <p class="meal"><%= mealText[0] %></p>
-                <a target="_blank" href="<%= mealUrls[0] %>"><img src="<%= mealImages[0] %>"></img></a>
-                <p class="meal"><%= mealText[1] %></p>
-                <a target="_blank" href="<%= mealUrls[1] %>"><img src="<%= mealImages[1] %>"></img></a>
-                <p class="meal"><%= mealText[2] %></p>
-                <a target="_blank" href="<%= mealUrls[2] %>"><img src="<%= mealImages[2] %>"></img></a>
-                <p class="meal"><%= nutrition %></p>
+                <p class="meal">Generate a meal plan above and click on each picture for the full ingredient list, recipe, and instructions on preparation.</p> <br>
+                <div class="mealsContainer">
+                    <p class="meal"><%= mealText[0] %></p>
+                    <a target="_blank" href="<%= mealUrls[0] %>"><img src="<%= mealImages[0] %>"></img></a>
+                    <p class="meal"><%= mealText[1] %></p>
+                    <a target="_blank" href="<%= mealUrls[1] %>"><img src="<%= mealImages[1] %>"></img></a>
+                    <p class="meal"><%= mealText[2] %></p>
+                    <a target="_blank" href="<%= mealUrls[2] %>"><img src="<%= mealImages[2] %>"></img></a>
+                    <p class="meal"><%= nutrition %></p>
+                </div>
             <% } %>
             <% if(error !== null){ %>
                 <p><%= error %></p>

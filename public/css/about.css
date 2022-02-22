@@ -7,19 +7,19 @@
   .aboutHeader h1{
     text-align: center;
     padding-top: 3%;
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .aboutHeader h2{
     text-align: center;
-    padding: 2.5em;
+    padding: 2.5rem;
 }
 
 
 .aboutHeader h4{
     text-align: center;
     padding-bottom: 2%;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 
@@ -35,22 +35,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 3em;
+    padding-bottom: 3rem;
 
 }
 
 .mission{
-    background-color: green;
-    font-size: 3em;
+    background-color: olivedrab;
+    font-size: 2rem;
     color: white;
     text-align: center;
-    padding: 2em;
+    padding: 2rem;
 }
 
 
 .about{
-    font-size: 3em;
+    font-size: 2rem;
     text-align: center;
-    padding: 2em;
+    padding: 2rem;
 }
 
