@@ -3,7 +3,9 @@
 ## Features
 Curates a daily meal plan for user, based on diet needs (vegan, vegetarian, keto, etc) and daily calorie limit.
 
-Allows users to find various fitness activities/avenues near them such as cycling, hiking, gyms, parks, etc.
+Daily meal plan consists of 3 meals with number of servings, time to prepare, and an image linked to original recipe source with complete details about the dish. The users total calories and macros are displayed after the meals.
+
+Get Active page allows users to find various fitness activities/avenues near them such as cycling, hiking, gyms, parks, etc.
 
 ## How view the App
 
