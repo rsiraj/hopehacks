@@ -20,3 +20,13 @@ fieldset{
     margin: 10px;
 }
 
+.mealsContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.mealsContainer img{
+    margin-bottom: 10px;
+}

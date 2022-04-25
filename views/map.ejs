@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/css/map.css">
     <script src="https://kit.fontawesome.com/8f6e3efd56.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-    <title>FITHUB | Get Fit Map</title>
+    <title>FITHUB | Activity Map</title>
     
 </head>
 <body>
@@ -25,10 +25,15 @@
     </nav>
 
     <div id="activityMap" class="map">
-        <a href=/hiking><p>Hiking </p></a> 
-        <a href=/gym><p>Gym </p></a> 
-        <a href=/soccer><p>Soccer </p></a>
-        <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="<%= url %>"></iframe>
+        <div class="activities">
+            <a href=/hiking><p>Hiking</p></a> 
+            <a href=/gym><p>Gym</p></a> 
+            <a href=/soccer><p>Soccer</p></a>
+            <a href=/rockclimbing><p>Rock Climbing</p></a>
+            <a href=/zumba><p>Zumba</p></a>
+            <a href=/crossfit><p>Cross-Fit</p></a>
+        </div>
+        <iframe title="activityMap" class="mapAdjust" style="border:0" loading="lazy" allowfullscreen src="<%= url %>"></iframe>
     </div>
 
     <div class="footeradjustment"></div>
