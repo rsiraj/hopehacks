@@ -23,15 +23,9 @@ textarea {
       align-items: center; 
 } */
 
-.form-image{
-    width: 500px;
-    height: 530px;
-    margin-top: 85px;
-}
-
 .container {
   position: relative;
-  width: 100%;
+  width: 80%;
   min-height: 100vh;
   padding: 2rem;
   background-color: white;
@@ -44,19 +38,17 @@ textarea {
 .form {
   width: 100%;
   max-width: 820px;
-  background-color: olivedrab;
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 600px;
-  margin-top: 24px;
 }
 
 .contact-form {
-  background-color: olivedrab;
+  background-color: #936639;
   position: relative;
 }
 
@@ -65,7 +57,7 @@ textarea {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: olivedrab;
+  background-color: #1abc9c;
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
